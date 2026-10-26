@@ -101,6 +101,29 @@ These permissions grant access to sensitive functionality. Review the source cod
 
 The published source should be reviewed to determine what data is stored, how long it is retained, and whether any data is transmitted outside the device. Do not enter sensitive personal information into experimental builds.
 
+## Set Up Call Access
+
+### Step 1: Check the Default Phone App
+
+1. Open your phone's **Settings**.
+2. Tap **Apps**.
+3. Tap **Default apps**.
+4. Select **Phone app** or **Default caller app**.
+5. If **DriveAware** appears in the list, select it and confirm.
+6. If DriveAware does not appear, leave your existing Phone app selected and continue to Step 2.
+
+### Step 2: Enable Call Screening
+
+1. Open **DriveAware**.
+2. Tap **Allow Screening for Saved Contacts** or the call-screening setup button.
+3. Follow the instructions displayed by Android.
+4. If asked to grant call-screening access, select **DriveAware** and allow access.
+5. Return to DriveAware.
+
+If your phone says DriveAware already has call-screening access, no further action is needed for this step.
+
+**Note:** DriveAware uses Android's Call Screening feature and may not be available as the default Phone app. Call-screening settings and wording vary by device and Android version.
+
 ## Compatibility and Limitations
 
 - Initial testing has been performed on a OnePlus device.
