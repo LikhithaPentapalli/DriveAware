@@ -82,25 +82,6 @@ Alternatively, use Android Studio's **Build > Build APK(s)** option to create a 
 6. Use another phone to test incoming calls and SMS messages.
 7. Disable protection after testing.
 
-Test calls and SMS messages only while parked. Do not interact with the phone while driving or riding.
-
-## Permissions and Privacy
-
-The current manifest declares the following permissions:
-
-| Permission | Intended purpose |
-|---|---|
-| `READ_PHONE_STATE` | Phone-state-related functionality, where required |
-| `RECEIVE_SMS` | Receive incoming SMS broadcasts |
-| `READ_CONTACTS` | Support contact-related functionality |
-| `SEND_SMS` | Send automatic SMS replies |
-
-The application also declares an Android `CallScreeningService` for supported incoming-call management.
-
-These permissions grant access to sensitive functionality. Review the source code and grant only the permissions required for the features you use.
-
-The published source should be reviewed to determine what data is stored, how long it is retained, and whether any data is transmitted outside the device. Do not enter sensitive personal information into experimental builds.
-
 ## Set Up Call Access
 
 ### Step 1: Check the Default Phone App
@@ -123,6 +104,25 @@ The published source should be reviewed to determine what data is stored, how lo
 If your phone says DriveAware already has call-screening access, no further action is needed for this step.
 
 **Note:** DriveAware uses Android's Call Screening feature and may not be available as the default Phone app. Call-screening settings and wording vary by device and Android version.
+
+Test calls and SMS messages only while parked. Do not interact with the phone while driving or riding.
+
+## Permissions and Privacy
+
+The current manifest declares the following permissions:
+
+| Permission | Intended purpose |
+|---|---|
+| `READ_PHONE_STATE` | Phone-state-related functionality, where required |
+| `RECEIVE_SMS` | Receive incoming SMS broadcasts |
+| `READ_CONTACTS` | Support contact-related functionality |
+| `SEND_SMS` | Send automatic SMS replies |
+
+The application also declares an Android `CallScreeningService` for supported incoming-call management.
+
+These permissions grant access to sensitive functionality. Review the source code and grant only the permissions required for the features you use.
+
+The published source should be reviewed to determine what data is stored, how long it is retained, and whether any data is transmitted outside the device. Do not enter sensitive personal information into experimental builds.
 
 ## Compatibility and Limitations
 
